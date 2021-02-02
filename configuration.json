@@ -1,0 +1,92 @@
+[
+    {
+        "key": "ConnectionSetName",
+        "type": "input",
+        "templateOptions": {
+            "label": "ConnectionSetName",
+            "description": "The Name of the SAPConfigParameter set",
+            "required": true
+        }
+    },
+    {
+        "key": "HostName",
+        "type": "input",
+        "templateOptions": {
+            "label": "HostName",
+            "description": "The HostName of the SAP server where the SAP system in installed",
+            "required": true
+        }
+    },
+    {
+        "key": "SysId",
+        "type": "input",
+        "templateOptions": {
+            "label": "SysId",
+            "description": "The ID of the SAP system",
+            "required": true
+        }
+    },
+    {
+        "key": "SysNr",
+        "type": "input",
+        "templateOptions": {
+            "label": "SysNr",
+            "description": "The Number of SAP system",
+            "required": true
+        }
+    },
+    {
+        "key": "Client",
+        "type": "input",
+        "templateOptions": {
+            "label": "Client",
+            "description": "The Client of the SAP system",
+            "required": true
+        }
+    },
+    {
+        "key": "UserName",
+        "type": "input",
+        "templateOptions": {
+            "label": "UserName",
+            "description": "The UserName to connect the SAP system",
+            "required": true
+        }
+    },
+    {
+        "key": "Password",
+        "type": "input",
+        "templateOptions": {
+            "label": "Password",
+            "description": "The Password to connect the SAP system",
+            "required": true
+        }
+    },
+    {
+        "key": "SAPdllDirectoryPath",
+        "type": "input",
+        "templateOptions": {
+            "label": "SAPdllDirectoryPath",
+            "description": "The directory where the SAP connector dll's are located",
+            "required": true
+        }
+    },
+    {
+        "key": "FunctionCall",
+        "type": "input",
+        "templateOptions": {
+            "label": "FunctionCall",
+            "description": "The name of the functionCall. This is specified within SAP. The function call must be configured to retrieve the requested data from SAP",
+            "required": true
+        }
+    },
+    {
+        "key": "TableName",
+        "type": "input",
+        "templateOptions": {
+            "label": "TableName",
+            "description": "The name of the table in which the user data is stored",
+            "required": true
+        }
+    }
+]
