@@ -67,3 +67,4 @@ For more information on the BAPI interface: https://help.sap.com/viewer/df959412
 5. Make changes to the *.PS1 file(s) according to your SAP implementation. You can use the *persons.ps1* as an example. Another example on how to retrieve the tablesNames from SAP can found within the *<./resources/Get-SAPTables.ps1>* file.
 
 6. Add a new 'Source System' to HelloID and make sure to import all the necessary files.
+ 
