@@ -68,3 +68,5 @@ For more information on the BAPI interface: https://help.sap.com/viewer/df959412
 
 6. Add a new 'Source System' to HelloID and make sure to import all the necessary files.
  
+# HelloID Docs
+The official HelloID documentation can be found at: https://docs.helloid.com/
