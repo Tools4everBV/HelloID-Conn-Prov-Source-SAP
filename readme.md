@@ -5,7 +5,7 @@
  - [Introduction](#Introduction)
  - [Work In Progress](#Work-In-Progress)
  - [Prerequisites](#Prerequisites)
-   - [Connection Settings](#Connection-Settings)
+ - [Connection Settings](#Connection-Settings)
  - [BAPI Function Calls](#BAPI-function-calls)
  - [Setup the connector](#Setup-the-connector)
 
@@ -33,20 +33,20 @@ Out of the box, The *HelloID-Conn-Prov-Source-SAP connector* is not ready for im
 
   Function calls must be created within SAP in order to retrieve data.
   
-  ### Connection Settings
-  
-  In order to connect to SAP, the following information is required:
-  
-  | Connection setting | Description                                                  |
-  | ------------------ | ------------------------------------------------------------ |
-  | HostName           | The HostName of the SAP server where the SAP system in installed |
-  | SysId              | The ID of the SAP system                                     |
-  | SysNr              | The Number of SAP system                                     |
-  | Client             | The Client of the SAP system                                 |
-  | UserName           | The UserName to connect the SAP system                       |
-  | Password           | The Password to connect the SAP system                       |
-  | FunctionCall       | The name of the functionCall. This is specified within SAP. The function call must be configured to retrieve the requested data from SAP |
-  | TableName          | The name of the table in which the user data is stored       |
+## Connection Settings
+
+In order to connect to SAP, the following information is required:
+
+| Connection setting | Description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| HostName           | The HostName of the SAP server where the SAP system in installed |
+| SysId              | The ID of the SAP system                                     |
+| SysNr              | The Number of SAP system                                     |
+| Client             | The Client of the SAP system                                 |
+| UserName           | The UserName to connect the SAP system                       |
+| Password           | The Password to connect the SAP system                       |
+| FunctionCall       | The name of the functionCall. This is specified within SAP. The function call must be configured to retrieve the requested data from SAP |
+| TableName          | The name of the table in which the user data is stored       |
 
 
 ## BAPI function calls
