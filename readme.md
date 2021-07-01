@@ -5,6 +5,7 @@
  - [Introduction](#Introduction)
  - [Work In Progress](#Work-In-Progress)
  - [Prerequisites](#Prerequisites)
+   - [Connection Settings](#Connection-Settings)
  - [BAPI Function Calls](#BAPI-function-calls)
  - [Setup the connector](#Setup-the-connector)
 
@@ -31,12 +32,26 @@ Out of the box, The *HelloID-Conn-Prov-Source-SAP connector* is not ready for im
 - [ ] BAPI Function calls
 
   Function calls must be created within SAP in order to retrieve data.
+  
+  ### Connection Settings
+  
+  In order to connect to SAP, the following information is required:
+  
+  | Connection setting | Description                                                  |
+  | ------------------ | ------------------------------------------------------------ |
+  | HostName           | The HostName of the SAP server where the SAP system in installed |
+  | SysId              | The ID of the SAP system                                     |
+  | SysNr              | The Number of SAP system                                     |
+  | Client             | The Client of the SAP system                                 |
+  | UserName           | The UserName to connect the SAP system                       |
+  | Password           | The Password to connect the SAP system                       |
+  | FunctionCall       | The name of the functionCall. This is specified within SAP. The function call must be configured to retrieve the requested data from SAP |
+  | TableName          | The name of the table in which the user data is stored       |
+
 
 ## BAPI function calls
 
-Data from SAP can be retrieved using the BAPI interface. (Business Application Programming Interface). 
-
-At minimum, the following data is required:
+Data from SAP is retrieved by using the BAPI interface. (Business Application Programming Interface). The BAPI interface exposes _function calls_. These _function calls_ will have to be created by the customer or a SAP consultant. Within the function calls. The _function calls_ will return a predefined set of data (tables) containing the data that is necessary for HelloID. At minimum, the following data is required:
 
 | Person                                                       |
 | ------------------------------------------------------------ |
@@ -46,7 +61,7 @@ At minimum, the following data is required:
 | ------------------------------------------------------------ |
 | Type<br/>Sequence<br/>Fraction<br/>Fte<br/>Hours_per_week2<br/>Business<br/>Organizational_unit<br/>Manager<br/>Profession<br/>Start<br/>End |
 
-> The name of the function call and table are both needed within the connector.
+> The name of the function call and table are required for the connector.
 
 For more information on the BAPI interface: https://help.sap.com/viewer/df959412681b4619a38f03ff90207e6b/4.2.12/en-US/577b7d566d6d1014b3fc9283b0e91070.html
 
