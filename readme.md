@@ -39,19 +39,19 @@ In order to connect to SAP, the following information is required:
 
 | Connection setting | Description                                                  |
 | ------------------ | ------------------------------------------------------------ |
-| HostName           | The HostName of the SAP server where the SAP system in installed |
+| HostName           | The HostName of the SAP server where the SAP system is installed |
 | SysId              | The ID of the SAP system                                     |
-| SysNr              | The Number of SAP system                                     |
+| SysNr              | The Number of the SAP system                                     |
 | Client             | The Client of the SAP system                                 |
 | UserName           | The UserName to connect the SAP system                       |
 | Password           | The Password to connect the SAP system                       |
 | FunctionCall       | The name of the functionCall. This is specified within SAP. The function call must be configured to retrieve the requested data from SAP |
-| TableName          | The name of the table in which the user data is stored       |
+| TableName          | The name of the table in which the data is stored       |
 
 
 ## BAPI function calls
 
-Data from SAP is retrieved by using the BAPI interface. (Business Application Programming Interface). The BAPI interface exposes _function calls_. These _function calls_ will have to be created by the customer or a SAP consultant. Within the function calls. The _function calls_ will return a predefined set of data (tables) containing the data that is necessary for HelloID. At minimum, the following data is required:
+Data from SAP is retrieved by using the BAPI interface. (Business Application Programming Interface). The BAPI interface exposes _function calls_. These _function calls_ will have to be created by the customer or a SAP consultant. The _function calls_ will return a predefined set of data (tables) containing the data that is necessary for HelloID. At minimum, the following data is required:
 
 | Person                                                       |
 | ------------------------------------------------------------ |
